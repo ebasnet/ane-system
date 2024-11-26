@@ -85,12 +85,18 @@ export default function Registration() {
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">State <span className='text-danger'>*</span></label>
                         <select id="inputState" class="form-select" name='state' onChange={handleInput} required>
-                            <option value=''>Choose...</option>
-                            <option value='Delhi'>Delhi</option>
-                            <option value='Hydrabad'>Hydrabad</option>
-                            <option value='Karnataka'>Karnataka</option>
-                            <option value='Mumbai'>Mumbai</option>
-                            <option value='Tamil Nadu'>Tamil Nadu</option>
+                        <option value=''>Choose...</option>
+                                <option value='Kathmandu'>Kathmandu</option>
+                                <option value='Pokhara'>Pokhara</option>
+                                <option value='Lalitpur'>Lalitpur</option>
+                                <option value='Bhaktapur'>Bhaktapur</option>
+                                <option value='Chitwan'>Chitwan</option>
+                                <option value='Pokhara'>Pokhara</option>
+                                <option value='Biratnagar'>Biratnagar</option>
+                                <option value='Janakpur'>Janakpur</option>
+                                <option value='Butwal'>Butwal</option>
+                                <option value='Dhangadhi'>Dhangadhi</option>
+
                         </select>
                     </div>
                     <div class="col-md-3">
