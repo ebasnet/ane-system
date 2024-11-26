@@ -1,0 +1,97 @@
+.App {
+  /* background: linear-gradient(45deg, #00bcd4,#ffeb3b); */
+  text-align: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+.material-symbols-outlined:hover {
+  color: red !important;
+  cursor: pointer;
+}
+
+.blurry-border {
+  box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bg-image {
+    background-image: url('https://images.hdqwalls.com/download/after-sunset-minimal-4k-zm-1366x768.jpg');
+    background-size: cover;
+    background-position: fixed;
+  }
+
+  @keyframes floatY {
+    0% { transform: translateX(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateX(0); }
+  }
+
+  .floatOnY {
+      animation: floatY 2s infinite;
+  }
+
+  @keyframes appearfromRight {
+    0% { opacity: 0; transform: translateX(1000px); }
+    50% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes appearfromLeft {
+    0% { opacity: 0; transform: translateX(-1000px); }
+    50% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes appearfromTop {
+    0% { opacity: 0; transform: translateY(-1000px); }
+    50% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+
+  .appearfromRight {
+      animation: appearfromRight 2s;
+  }
+
+  .appearfromLeft {
+      animation: appearfromLeft 2s;
+  }
+
+  .appearfromTop {
+      animation: appearfromTop 2s;
+  }
+
+
+  /* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(4, 62, 100, 0.624);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: skyblue;
+}
+
+/* Remove the right-side arrow from the dropdown toggle */
+.dropdown-toggle::after {
+  display: none;
+}
+/* Change cursor to pointer on hover */
+.dropdown-toggle:hover {
+  cursor: pointer;
+}

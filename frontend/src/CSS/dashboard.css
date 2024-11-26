@@ -1,0 +1,31 @@
+.dashboardbox {
+    transition: transform 0.3s;
+}
+
+.dashboardbox:hover {
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1)
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
