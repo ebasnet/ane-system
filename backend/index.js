@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json())
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/AdmissionAndEnrollment').then( res => {
+mongoose.connect('mongodb+srv://ebasnet:ebasnet@cluster0.rv9he.mongodb.net/').then( res => {
     console.log("Database Connected")
 }).catch ( error => {
     console.log("MONGODB Server error!\n", error)
